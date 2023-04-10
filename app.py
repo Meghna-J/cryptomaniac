@@ -52,9 +52,6 @@ def search_crypto(name):
     print(name)
     datafile = open(f'{name}.txt', "rb")
     data = pickle.load(datafile)
-    k=data[22]-data[16]
-    data[18]+=k/2
-    data[20]+=k/3
     datafile.close()
     arr=np.arange(1,24)
     
